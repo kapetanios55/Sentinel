@@ -263,7 +263,7 @@
                         "recordTypes": "[parameters('recordTypes')]",
                         "workspaceID": "[parameters('workspaceID')]",
                         "workspaceKey": "[concat('@Microsoft.KeyVault(SecretUri=', reference(resourceId('Microsoft.KeyVault/vaults/secrets', variables('KeyVaultName'), 'workspaceKey')).SecretUriWithVersion, ')')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://aka.ms/sentinel-O365APItoAS-functionapp",
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/kapetanios55/Sentinel/archive/refs/heads/master.zip",
                         "LAURI": "[variables('LogAnaltyicsUri')]",
                         "customLogName": "O365",
                         "managementApi": "[parameters('office365Environment')]",
